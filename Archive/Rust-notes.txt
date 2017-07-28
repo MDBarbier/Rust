@@ -1,0 +1,3 @@
+- no VM
+- native code language
+- powerful and safe

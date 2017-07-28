@@ -1,0 +1,10 @@
+- no VM
+- native code language
+- powerful and safe
+- cargo is package/project manager for rust
+- main.rs is the conventional name for a program's initial file
+- lib.rs is the conventional name for a library
+- Cargo.toml is cargo settings file, it looks for files in the "src" directory called either 
+	main.rs or lib.rs
+- cargo run runs the application
+- cargo new <name> creates a new project for you with the required layout

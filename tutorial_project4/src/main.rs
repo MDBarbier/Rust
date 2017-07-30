@@ -1,7 +1,30 @@
+use std::mem;
+
+//This is a global constant
+const MY_CONST:u8 = 42; //no fixed mem address
+
+//static global
+static STATIC_GLOBAL:i32 = 123;
+
+//static mutable global -- this can compromise memory safety so Rust will throw error
+// by default you must declare uses of it unsafe
+static mut STATIC_MUTABLE:i32 = 456;
+
 fn main() {
 
     let a = 1;
     scope_demo();
+
+println!("hello");
+
+    println!("STATIC_GLOBAL = {}", STATIC_GLOBAL);
+
+    unsafe
+    {
+        println!("STATIC_MUTABLE = {}", STATIC_MUTABLE);
+        STATIC_MUTABLE = 789;
+        println!("STATIC_MUTABLE is now = {}", STATIC_MUTABLE);
+    }    
 }
 
 
@@ -27,6 +50,5 @@ fn scope_demo() {
 
     println!("a = {}", a); //but here we see the change was only to the inner 
                             //scope var because of Shadowing
-
 
 }

@@ -8,3 +8,25 @@
 	main.rs or lib.rs
 - cargo run runs the application
 - cargo new <name> creates a new project for you with the required layout
+
+
+MEMORY ALLOCATION
+
+- when you use "let" keyword memory is being allocated automatically
+- allocating memory on the "bottom": called the stack. They get stacked on top
+	 of each other
+- stack is last in first out structure
+- when you use "let" the stack is what is used to allocate memory
+- function arguments also get put on the stack
+- lamba variables also get put on the stack
+- the stack is fast, but the size available is limited
+- the other form of dynamic allocation is the "heap", which resides at the
+	"top" of the memory available
+- Things like the "Box" generic type use the heap
+- You end up with a reference/pointer to the item, the actual item is still
+	on the stack, but the reference points to the memory allocation on the
+	heap where the value actually resides
+- To access the actual value you cannot just call the variable name, you must
+	use the "dereferencing operator", which is "*", before the variable
+	name.
+- 

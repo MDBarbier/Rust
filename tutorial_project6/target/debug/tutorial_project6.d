@@ -1,0 +1,1 @@
+/home/matt/Rust/tutorial_project6/target/debug/tutorial_project6: /home/matt/Rust/tutorial_project6/src/main.rs /home/matt/Rust/tutorial_project6/src/sh.rs /home/matt/Rust/tutorial_project6/src/conditionals_and_loops.rs
